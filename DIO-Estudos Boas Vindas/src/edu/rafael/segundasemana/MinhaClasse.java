@@ -12,10 +12,12 @@ public class MinhaClasse {
     }
 }
 
-// int/double == let/var
-// MAIUSCULA == const
+// final MAIUSCULA == const
 
 // String meuNome = "Rafael";
 // int anoFabricacao = 2023;
 // boolean verdadeira = false;
 // anoFabricacao = 2018;
+
+// Tipos primitivos da linguagem:
+// int, byte, short, long, float, double, boolean, char
