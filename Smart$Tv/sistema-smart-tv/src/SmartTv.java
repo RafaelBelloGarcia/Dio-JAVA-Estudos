@@ -1,35 +1,17 @@
-public class SmartTv {
-    boolean ligada = false;
-    int canal = 1;
-    int volume = 25;
+import java.util.Scanner;
 
-    public void mudarCanal(int novoCanal) {
-        canal = novoCanal;
-    }
+public class SmartTV {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    public void aumentarCanal() {
-        canal++;
-    }
+        double saldoAtual = scanner.nextDouble();
+        double valorDeposito = scanner.nextDouble();
+        double valorRetirada = scanner.nextDouble();
 
-    public void diminuirCanal() {
-        canal--;
-    }
+        // Calcular o saldo atualizado
+        double saldoAtualizado = saldoAtual + valorDeposito - valorRetirada;
 
-    public void aumentarVolume() {
-        volume++;
-        System.out.println("volume atual :" + volume);
-    }
-
-    public void diminuirVolume() {
-        volume--;
-        System.out.println("volume atual :" + volume);
-    }
-
-    public void ligar() {
-        ligada = true;
-    }
-
-    public void desligar() {
-        ligada = false;
+        // Imprimir o saldo atualizado com uma casa decimal
+        System.out.printf("%.1f%n", saldoAtualizado);
     }
 }
